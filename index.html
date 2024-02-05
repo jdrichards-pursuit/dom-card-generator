@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="key.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="generate.js" defer></script>
+    <script src="template.js" defer></script>
+    <title>Card Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Character Card Generator</h1>
+      <h2>
+        Enter a concise description of your character and I will create an image
+        and description based on your prompt
+      </h2>
+    </header>
+    <main>
+      <form id="cardGeneratorForm">
+        <label for="characterDescription">
+          <textarea
+            type="text"
+            id="characterDescription"
+            name="characterDescription"
+            placeholder="Enter character base description"
+          ></textarea>
+        </label>
+        <button type="submit">Generate Card</button>
+      </form>
+
+      <section id="cardContainer"></section>
+      <!-- <div class="loader" id="loader"></div> -->
+      <div id="wait">One Moment Please</div>
+      <div id="countdown"></div>
+    </main>
+  </body>
+</html>
